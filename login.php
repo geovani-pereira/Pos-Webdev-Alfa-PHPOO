@@ -35,7 +35,7 @@ $a = array_map('x',$a);
 */
 
 
-$o = new class(2){
+$o = new class(2){ //Classe anonima
 
 	public $x;
 	public $y;
@@ -51,7 +51,7 @@ $o = new class(2){
 $x = serialize($u);
  var_dump($x); // transforma objeto em texto
 
- $u2 = unserialize($x, ['allowed_classes' =>[  'Usuario', 'Admin']]);
+ $u2 = unserialize($x, ['allowed_classes' =>[  'Usuario', 'Admin']]);//sllowed_classes classes permitidas
 
 
  var_dump($u2); // refaze o objeto
